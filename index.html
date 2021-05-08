@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Finder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>🐟 🍞 🍙  MEAL FINDER 🧫 🥧 🍕</h1> 
+        </div>
+        <div class="flex search-container">
+            <form class="flex" id="submit">
+                <input type="text" list="search-suggestions" id="search" class="search search-input" placeholder="I want to eat..."/>
+                <datalist id="search-suggestions">
+                  
+                </datalist>
+                <button class="search search-btn" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+                
+            </form>
+            <button class="search random-btn" id="random-btn" type="">
+                <i class="fas fa-random"></i>
+            </button>
+        </div>
+        <div id="results-heading"></div>
+        <div id="meals" class="meals"></div>
+        <div id="single-meal"></div>
+    </div>
+    <script>var exports = {};</script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
